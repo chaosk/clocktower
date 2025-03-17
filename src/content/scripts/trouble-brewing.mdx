@@ -1,0 +1,212 @@
+
+[comment]: # (This is a programatically generated file. Don't edit it here.)
+
+import { Bleed, Callout, Cards, ImageZoom, Tabs } from 'nextra/components'
+
+# Trouble Brewing
+
+>Trouble Brewing has a little bit of everything. Some characters passively receive information, some need to take action to learn who is who, while some simply want to bait the Demon into attacking them. Both good and evil can gain the upper hand by making well-timed sacrifices. Trouble Brewing is a relatively straightforward Demon-hunt, but evil has a number of dastardly misinformation tricks up their sleeves, so the good players best question what they think they know if they hope to survive.
+
+-- via [BotC wiki](https://wiki.bloodontheclocktower.com/Trouble_Brewing)
+
+---
+
+<Cards.Card
+  title="Open the PDF"
+  href="/scripts/trouble-brewing.pdf"
+  arrow
+/>
+
+## Townsfolk
+
+### Washerwoman
+
+> You start knowing that 1 of 2 players is a particular Townsfolk.
+
+<figure>
+  <ImageZoom src="/examples/washerwoman.png" width={600} height={600} />
+  <figcaption>Example: **Heidi** starts the game knowing that either **Kevin** or **Larry** is the **Ravenkeeper**.</figcaption>
+</figure>
+
+### Librarian
+
+> You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)
+
+
+
+### Investigator
+
+> You start knowing that 1 of 2 players is a particular Minion.
+
+
+
+### Chef
+
+> You start knowing how many pairs of evil players there are.
+
+<Callout type="info">
+  Accounts for all consecutive pairs around the Town Square.<br/>
+  Therefore, 3 evil players sitting in a row would result in Chef receiving a **2**.
+</Callout>
+
+<figure>
+  <ImageZoom src="/examples/chef-1.png" width={600} height={600} />
+  <figcaption>Example: **Ivan** starts the game knowing that there's **1** pair of evil players.</figcaption>
+</figure>
+
+### Empath
+
+> Each night, you learn how many of your 2 alive neighbors are evil.
+
+<Callout type="info">
+  You wake after the Demon, and you only consider your _living_ neighbors (dead players are skipped).
+</Callout>
+
+### Fortune Teller
+
+> Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.
+
+<Tabs items={['Learns a no', 'Learns a yes']}>
+  <Tabs.Tab>
+    <figure>
+      <ImageZoom src="/examples/fortuneteller-no.png" width={600} height={600} />
+      <figcaption>Example: **Dave** chooses **Grace** and **Judy**, and learns that *no*, neither of them is the Demon.</figcaption>
+    </figure>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <figure>
+      <ImageZoom src="/examples/fortuneteller-yes-red-herring.png" width={600} height={600} />
+      <figcaption>Example: **Dave** chooses **Bob** and **Judy**, and learns a *yes*, because **Bob** is the Red Herring.</figcaption>
+    </figure>
+  </Tabs.Tab>
+</Tabs>
+
+### Undertaker
+
+> Each night*, you learn which character died by execution today.
+
+
+
+### Monk
+
+> Each night*, choose a player (not yourself): they are safe from the Demon tonight.
+
+
+
+### Ravenkeeper
+
+> If you die at night, you are woken to choose a player: you learn their character.
+
+
+
+### Virgin
+
+> The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.
+
+<Callout type="info">
+  Since this is an execution, it results in immediate end of the day.
+</Callout>
+
+
+### Slayer
+
+> Once per game, during the day, publicly choose a player: if they are the Demon, they die.
+
+
+
+### Soldier
+
+> You are safe from the Demon.
+
+
+
+### Mayor
+
+> If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.
+
+
+
+## Outsiders
+
+### Butler
+
+> Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.
+
+<Callout type="info">
+  You must believe that the person you've selected will be voting/has voted at the moment your vote is counted.<br/>
+  It's okay to forget about it, but intentionally ignoring your voting restrictions is considered cheating.
+</Callout>
+
+### Drunk
+
+> You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.
+
+<Callout type="info">
+  When the game starts with the Drunk, the storyteller will add one more Townsfolk token instead of adding the Drunk token into the pool of characters. After all characters are randomly assigned, the storyteller chooses one Townsfolk to be the Drunk.
+
+  Storyteller will interact with the Drunk player as if they were the character they originally saw.
+</Callout>
+
+<figure>
+  <ImageZoom src="/examples/drunk.png" width={600} height={600} />
+  <figcaption>Example: **Dave** thinks he's the Undertaker, when in reality he's the Drunk. Charlie just died from an execution caused by him nominating the Virgin. Storyteller can show Dave *any* role, not just the Washerwoman, because Dave's the Drunk. Storyteller decides to show the **Spy** token.</figcaption>
+</figure>
+
+
+### Recluse
+
+> You might register as evil & as a Minion or Demon, even if dead.
+
+<Callout type="info">
+  Misregistration can happen for any part of any ability that involves player alignment or characters.<br/>
+  For example, Recluse sitting between two evil players can result in Chef receiving either 0, 1, or 2.
+</Callout>
+
+<figure>
+  <ImageZoom src="/examples/recluse.png" width={600} height={600} />
+  <figcaption>Example: **Dave** chooses **Charlie** and **Judy**. Storyteller chooses to register Recluse as a Demon and says that: yes, either of these players is the Demon.</figcaption>
+</figure>
+
+### Saint
+
+> If you die by execution, your team loses.
+
+
+
+## Minions
+
+### Poisoner
+
+> Each night, choose a player: they are poisoned tonight and tomorrow day.
+
+
+
+### Spy
+
+> Each night, you see the Grimoire. You might register as good & as a Townsfolk or Outsider, even if dead.
+
+
+
+### Baron
+
+> There are extra Outsiders in play. [+2 Outsiders]
+
+<Callout type="info">
+  Those extra Outsiders replace Townsfolk.
+</Callout>
+
+
+### Scarlet Woman
+
+> If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count.)
+
+
+
+## Demons
+
+### Imp
+
+> Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.
+
+
+

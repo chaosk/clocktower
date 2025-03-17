@@ -1,0 +1,30 @@
+
+[comment]: # (This is a programatically generated file. Don't edit it here.)
+
+import { Bleed, Callout, Cards, ImageZoom, Tabs } from 'nextra/components'
+
+# {{ script_name }}
+
+{{ intro }}
+
+---
+
+<Cards.Card
+  title="Open the PDF"
+  href="/scripts/{{ name }}.pdf"
+  arrow
+/>
+
+{% for type, items in characters_by_type -%}
+
+## {{ type.display_name }}
+
+{% for character in items -%}
+### {{ character.name }}
+
+> {{ character.ability }}
+
+{% if character.extra_mdx %}{{ character.extra_mdx }}{% endif %}
+
+{% endfor -%}
+{%- endfor -%}

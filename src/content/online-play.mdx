@@ -1,0 +1,85 @@
+import { Callout, ImageZoom, Tabs } from 'nextra/components'
+import { Video } from '../app/_components/video'
+
+# How to use the app
+
+## First steps
+
+<Callout type="warning">
+  We've been seeing performance problems with Safari, consider using a different browser.
+</Callout>
+
+1. Sign up to the [Blood on the Clocktower app](https://botc.app). It's free.
+2. Log in.
+3. Allow for camera/microphone access.
+4. Open settings (press `[Q]`) → Chat.
+5. Select your microphone/camera device from respective dropdowns (note that they look like headers).
+
+  <figure>
+    <ImageZoom src="/tutorials/chat-settings.png" width={600} height={600} />
+  </figure>
+
+
+## Joining the game
+
+Follow the link sent by the storyteller, then claim your seat by clicking on any empty seat:
+
+  <Video src="/tutorials/claiming-seat.mp4" />
+
+Engage in small talk until the game's ready. Or don't and find a suitable alternative.
+
+## First night and night info
+
+Once the game starts, you'll receive a token with your character and the first night will begin.
+
+Here's some examples of how that can look like for different characters:
+
+<Tabs items={['Fortune Teller', 'Scarlet Woman']}>
+  <Tabs.Tab>
+    <Video src="/tutorials/first-night-fortune-teller.mp4" />
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <Video src="/tutorials/first-night-scarlet-woman.mp4" />
+  </Tabs.Tab>
+</Tabs>
+
+If you miss the info, you can get back to it by clicking **Night info** in the top-right corner:
+
+![Night info button](/tutorials/ui-night-info.png)
+
+## Making your notes
+
+You can the Grimoire you see on the screen as your personal notepad for the information you receive,
+as well as characters people share with you, or any other information you might want to write down.<br/><br/>
+
+  <figure>
+    <Video src="/tutorials/assigning-characters-and-reminder-tokens.mp4" />
+  </figure>
+
+## Private conversations
+
+### Night whispers
+
+At night, you can only privately send text messages to your neighbours (that simulates real-life setting where you can only attempt to whisper to people near you). You can do that by pressing `[Enter]` and selecting the ✉️ icon displayed in the token of one of the neighbours.
+
+Note that every message sent at night shows up to others as a little envelope being passed between two players.
+
+  <figure>
+    <Video src="/tutorials/whisper-at-night.mp4" />
+  </figure>
+
+### Private chats
+
+During the day, you can invite anyone to have a private chat with. You do that by pressing _Request Private Chat_ (or pressing `[Enter]`) and selecting the 💬 icon on their token. They'll receive an invite and if they accept, no other player can join you without your consent.
+
+You can leave every chat by pressing the exit icon in the _Voice_ panel, or by pressing `[Backspace]`.
+
+Note that anyone can see where everyone is at a given moment, so people can see who everyone's talking to.
+
+  <figure>
+    <Video src="/tutorials/private-chat.mp4" />
+  </figure>
+
+### Public locations
+
+There's also a few pre-existing rooms that people can join to have conversations with.
