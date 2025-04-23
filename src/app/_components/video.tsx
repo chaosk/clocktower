@@ -2,14 +2,13 @@
 
 import type { FC, ReactNode } from 'react'
 
-export const Video: FC<{ src: string; caption?: ReactNode; ratio: number }> = ({
+export const Video: FC<{ src: string; caption?: ReactNode }> = ({
   src,
-  caption,
-  ratio
+  caption
 }) => {
   return (
     <div>
-      <div style={{ paddingBottom: ratio * 100 + '%' }} />
+      <div style={{ paddingBottom: '1em' }} />
       <video
 	    controls
         muted
