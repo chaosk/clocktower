@@ -33,7 +33,7 @@ export default async function RootLayout({ children }) {
           banner={banner}
           navbar={navbar}
           search={search}
-          sidebar={{defaultMenuCollapseLevel: 1}}
+          sidebar={{autoCollapse: false}}
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/chaosk/clocktower/tree/main"
           feedback={{content: null}}
