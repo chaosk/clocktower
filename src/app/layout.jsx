@@ -8,7 +8,7 @@ export const metadata = {}
 const banner = <Banner storageKey="hooray-more-clocks">Now with 100% more clocks! 🕰️🗼</Banner>
 const navbar = (
   <Navbar
-    logo={<b>Blood on the Clocktower Primer</b>}
+    logo={<b>Blood on the Clocktower 101</b>}
   />
 )
 const search = (
