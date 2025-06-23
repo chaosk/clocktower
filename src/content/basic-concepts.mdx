@@ -7,96 +7,116 @@ import { Callout } from 'nextra/components'
 
 # Introduction
 
-<Callout>As an alternative to reading this page, you might prefer to watch this [10-minute video](https://www.youtube.com/watch?v=M-aZP47Nm9g) instead.<br/>Come back here for the next page though.</Callout>
+<Callout>
+Prefer to watch instead? Check out this [10-minute video](https://www.youtube.com/watch?v=M-aZP47Nm9g).  
+Come back [here](/online-play) afterward to continue!
+</Callout>
 
 ## Teams
 
-It's a team game. You learn your alignment when you learn what your character is.
+*Blood on the Clocktower* is a **team-based social deduction game**. You’ll learn your character and alignment at the start of the game.
 
 ### 🔵 Good team [#good]
 
-If you get a token with a **blue** character, you're good.
-
-Good team is the majority of players. It's comprised of _Townsfolk_ and _Outsiders_. Once the demon is dead, the good team wins.
+- **Blue token = you're Good**
+- Makes up the majority of players
+- Includes:
+  - **Townsfolk** – helpful abilities
+  - **Outsiders** – abilities that hinder the good team
+- **Goal:** Execute the Demon
 
 ### 🔴 Evil team [#evil]
 
-If you get a token with a **red** character, you're evil.
-
-Evil team is a small subset of players. It's comprised of _Minions_ and _Demon_. Evil wins when there's only 2 players left alive (one of them being the demon).
-
-While evil team starts the game in severe numbers disadvantage, they start the game knowing who is part of the evil team (and their character types). Also, the demon knows some characters that are not in play, allowing for easier bluffing.
+- **Red token = you're Evil**
+- A small group of players who **know each other**
+- Includes:
+  - **Minions** – helpers and misleaders
+  - **The Demon** – the killer
+- **Goal:** Have the Demon alive when only 2 players remain
 
 ## Game phases
 
-The game operates in a cycle of night and day phases, starting with night 1 and ending when a victory condition is met.
+Game alternates between **Night** and **Day** phases (starting with Night 1) until one team wins.
 
 ### 😴 Night phase [#night]
 
-Characters whose ability makes them do _something_ at night are woken by the storyteller and make appropriate choices, and/or receive information. This includes the demon that wakes and chooses a player to die.
+- Players with night abilities (including the Demon) are woken by the storyteller and act
 
 ### ☀️ Day phase [#day]
 
-During the day, all players are free to go off and have private conversations.
-
-After some time (storyteller will roughly tell how much), players will be called back and eventually be asked to start nominating as they please.
+- Players can chat in public as well as privately
+- After some time, players are called back and the **nominations** begin
 
 #### Nominations and execution [#nominations]
 
-Nomination is a vote to execute a player at the end of the day. Number of required votes for the vote to pass and mark the nominated player for execution is half of the currently living players. However, there can be further nominations, and if someone else gets more votes, that player is marked instead. Getting the same amount of votes means both players are safe.
-
-Every day, each alive player can nominate once, and each player can be nominated once.
-
-Once there's no more nominations, the marked player is executed (and dies). The game proceeds to the next night phase (or ends if a winning condition is met).
+- Each alive player can **nominate one person per day**
+- Players listen to the accusation, then to the defence of the accused, and the vote is run
+- A player is marked for execution if they receive votes equal to or greater than half the number of living players (rounded up) _(For example, if there are 7 players alive, 4 votes are needed.)_
+- Further nominations can overwrite the marked player if someone gets more votes
+- Ties = no execution
+- Once nominations end, the marked player is executed, and the night phase begins again
 
 ## Dead vs alive
 
-Dying in this game does not result in player elimination. Players that have been killed continue playing, however:
-- they lose their character ability;
-- they can no longer nominate;
-- they can only vote for *one* nomination until the end of the game (also called their dead/ghost vote).
+Death isn’t the end! Dead players:
 
-Dead players are still vital to their team success, as they can keep sharing whatever information or opinions they have.
+- Lose their character ability
+- Can’t nominate
+- Get **one final vote** for the rest of the game (their *ghost vote*)
+
+But they can still:
+- Talk
+- Share theories
+- Help their team!
 
 ## Characters
 
-At the beginning of the game, storyteller will choose - from a full set of characters that are of the [script](/scripts) you're playing - a subset of characters that will be in the game. These will be randomly assigned to every player.
+Before each game, the **storyteller** selects characters from a [script](/scripts). Characters are **randomly assigned** to players.
 
-See [character distribution](/rules/character-distribution) to see how many of each type there's in a given game.
+See [Character Distribution](/rules/character-distribution) for how many of each type can appear.
 
 Characters are split into:
 
 ### Townsfolk
 
-Good characters that have abilities to help the good team win the game. This can include receiving information or protecting other players.
+Helpful characters on the good team.
 
-Example: **[Empath](/scripts/trouble-brewing#empath)** learns every night how many of their living neighbors are evil.
+_Example: **[Empath](/scripts/trouble-brewing#empath)** learns each night how many of their living neighbors are evil_
 
 ### Outsiders
 
-Good characters that have negatively impact the good team. This can include additional loss conditions or affecting other character's information.
+Good team characters that cause confusion or harm.
 
-Example: **[Saint](/scripts/trouble-brewing#saint)** can cause an immediate good team loss if executed.
+_Example: **[Saint](/scripts/trouble-brewing#saint)** causes an instant **loss** for the good team if executed_
 
 ### Minions
 
-Evil characters meant to help the Demon survive until the end of the game, and to cause misinformation among good players.
+Support the Demon by spreading misinformation.
 
-Example: **[Poisoner](/scripts/trouble-brewing#poisoner)** can cause other players' abilities to malfunction.
+_Example: **[Poisoner](/scripts/trouble-brewing#poisoner)** can cause other players' abilities to malfunction_
 
 ### Demon
 
-Evil character that kills at night and is the main target of the good team.
+Kills each night and must survive to win.
 
-Example: **[Imp](/scripts/trouble-brewing#imp)** can kill every night (except the first one), and can also target themselves to move the **Imp** character to a minion.
+Demon also starts the game knowing 3 characters that are definitely not in play (so called _Demon bluffs_).
+
+_Example: **[Imp](/scripts/trouble-brewing#imp)** can kill at night. If they kill themselves, one of their Minions becomes the new Imp._
 
 ## Poisoned/drunk state [#poison-drunk]
 
-Certain abilities (for example: **[Poisoner](/scripts/trouble-brewing#poisoner)**) can apply a poisoned/drunk state to a player. The general rule is that those players are treated as if they don't have their ability, but are meant to think that it still works correctly. Which means:
+Some effects (e.g., from a **Poisoner**) make players **drunk or poisoned**. That means:
 
-- if the ability is meant to change the game state in any way, it can't (Example: poisoned **[Monk](/scripts/trouble-brewing#monk)** can never protect anyone, but they're asked to choose anyway);
-- if the ability provides information, it _may_ be incorrect (Example: poisoned **[Empath](/scripts/trouble-brewing#empath)** can learn that either 0, 1, or 2 of their living neighbors are evil, storyteller decides).
+- Your ability **doesn't work**, but you **think it does**
+- If your ability gives info, that info **might be wrong**
+- If your ability changes the game, **it won't work**
+
+_Examples:_
+_A poisoned **[Slayer](/scripts/trouble-brewing#slayer)** publicly chooses a player that's actually the Demon — it has no effect._
+_A poisoned **[Empath](/scripts/trouble-brewing#empath)** might receive false numbers._
 
 ## Each night vs Each* night [#each-night-asterisk]
 
-Some character abilities have an asterisk next to the word _Each_. This means this ability **doesn't happen** on the first night.
+Some abilities say **“Each\* night”** — the asterisk means **it does NOT activate on the first night**.
+
+Pay attention to that asterisk!
