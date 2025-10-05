@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "next": "^15.2.3",
-    "nextra": "^4.2.17",
-    "nextra-theme-docs": "^4.2.17",
+    "next": "^15.5.4",
+    "nextra": "^4.6.0",
+    "nextra-theme-docs": "^4.6.0",
     "pagefind": "^1.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "scripts": {
     "dev": "next --turbopack",
